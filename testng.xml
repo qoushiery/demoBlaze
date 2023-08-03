@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/vois/Desktop/blazeDemo/demoBlaze">
+        <classes>
+            <class name="com.qpros.test.locators.tests.TestUserRegistration"/>
+            <class name="com.qpros.test.locators.tests.TestCategoriesHaveItems"/>
+            <class name="com.qpros.test.locators.tests.TestAddRandomItemToCart"/>
+            <class name="com.qpros.test.locators.tests.TestRemoveItemFromCart"/>
+            <class name="com.qpros.test.locators.tests.TestSuccessCheckoutWithRandomItem"/>
+        </classes>
+    </test>
+</suite>
