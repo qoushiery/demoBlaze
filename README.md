@@ -16,40 +16,40 @@ all test cases have the necessary validations and assertions to make sure that t
 
 # Framework classes and their functionality
 
-ElementActions Class
-
+**ElementActions Class
+**
 This Class contains all actions we need to interact with any web element that exists in the dom and all methods are implemented using the selenium library with its methods and all contained methods are implemented to be directly used by the user to create his own test case without any need to know info about selenium before Just call the ElmentActions class in your test and use their methods
 
-BrowserActions Class
-
+**BrowserActions Class
+**
 This Class contains all actions we need to interact with the browser and all methods are implemented using the selenium library with its methods and all contained methods are implemented to be directly used by the user to create his own test case without any need to know info about selenium before Just call the BrowerActions class in your test and use their methods
 
-DriverHandler
-
+**DriverHandler
+**
 This class handles all the initialization we need for any selected web driver (Chrome, Firefox and Edge)
 
-Config.properties
-
+**Config.properties
+**
 This File is a config file contains all data you will need to use in your tests
 
-ReadConfigPropertiesFile
-
+**ReadConfigPropertiesFile
+**
 This class is used to read our config file "Config.properties"
 
 # Test Classes and their functionality
 
-Locators Package
-
+**Locators Package
+**
 This package is considered a repository of static locators that we have in the system to be used to create any method needed for building our test case the locators are divided into separate classes based on their page location
 
-Strings Package
-
+**Strings Package
+**
 This package is considered a repository of static strings that we have in the system to be used to create any method needed for building our test case the locators are divided into separate classes based on their page location
 
-Pages Package
-
+**Pages Package
+**
 As we mentioned before the framework follows the POM design pattern so each page we have in the system has its own class and each page class contains the methods we need to interact with this page
 
-Test Package
-
+**Test Package
+**
 This package contains the tests we build End to End to be used in any suite
