@@ -111,4 +111,8 @@ public class HomePage {
     public void clickOnCartFromNavBar(){
         ElementActions.clickOnElement(HomePageLocators.CART_BTN);
     }
+
+    public void clickOnLogoutButton(){
+        ElementActions.clickOnElement(HomePageLocators.LOGOUT_BTN);
+    }
 }

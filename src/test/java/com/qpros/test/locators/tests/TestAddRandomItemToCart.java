@@ -1,5 +1,6 @@
 package com.qpros.test.locators.tests;
 
+import com.qpros.StaticStrings;
 import com.qpros.test.locators.pages.HomePage;
 import com.qpros.test.locators.pages.ProductDetailsPage;
 import org.testng.annotations.Test;
@@ -27,7 +28,7 @@ public class TestAddRandomItemToCart extends BaseTest {
         softAssert.assertEquals(addedItemName, randomSelectedItemFromHomePage, "this is not the selected item");
 
         productDetailsPage.clickOnAddToCartButton();
-        softAssert.assertEquals(productDetailsPage.getTextOfAddToCartAlert(),"Product added.","Product is not added yet");
+        softAssert.assertEquals(productDetailsPage.getTextOfAddToCartAlert(), StaticStrings.PRODUCT_ADDED_MESSAGE,"Product is not added yet");
         productDetailsPage.dismissAddToCartAlert();
 
         softAssert.assertAll();

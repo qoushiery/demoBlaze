@@ -1,5 +1,6 @@
 package com.qpros.test.locators.pages;
 
+import com.qpros.StaticStrings;
 import com.qpros.actions.ElementActions;
 import com.qpros.test.locators.locators.CartLocators;
 import com.qpros.test.locators.locators.HomePageLocators;
@@ -42,7 +43,7 @@ public void enterName(String fullName){
         ElementActions.clickOnElement(PlaceOrderLocators.PURCHASE_BTN);
     }
     public boolean checkPurchaseIsSucceeded(){
-        return ElementActions.getTextOfWebElement(SuccessfulPurchaseLocators.THANKS_MESSAGE).equalsIgnoreCase("Thank you for your purchase!");
+        return ElementActions.getTextOfWebElement(SuccessfulPurchaseLocators.THANKS_MESSAGE).equalsIgnoreCase(StaticStrings.THANKS_PURCHASE_MESSAGE);
     }
     public void clickOnSuccessfulOkButton(){
         ElementActions.clickOnElement(SuccessfulPurchaseLocators.OK_BTN);

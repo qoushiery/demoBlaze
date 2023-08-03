@@ -1,5 +1,6 @@
 package com.qpros.test.locators.tests;
 
+import com.qpros.StaticStrings;
 import com.qpros.test.locators.pages.CartDetailsPage;
 import com.qpros.test.locators.pages.HomePage;
 import com.qpros.test.locators.pages.ProductDetailsPage;
@@ -50,7 +51,10 @@ public class TestSuccessCheckoutWithRandomItem extends BaseTest{
 
         cartDetailsPage.clickOnSuccessfulOkButton();
 
-        softAssert.assertEquals(homePage.getPageTitle(),"PRODUCT STORE","User is not redirected to the home screen");
+        softAssert.assertEquals(homePage.getPageTitle(), StaticStrings.PRODUCT_STORE_TITLE,"User is not redirected to the home screen");
+
+        homePage.clickOnLogoutButton();
+
         softAssert.assertAll();
 
 

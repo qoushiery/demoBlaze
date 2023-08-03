@@ -28,6 +28,9 @@ DriverHandler
 
 This class handles all the initialization we need for any selected web driver (Chrome, Firefox and Edge)
 
+StaticStrings
+
+This Class contains all the strings that are existed statically on the website like "titles, success Messages" and those are used inside the scripts
 Config.properties
 
 This File is a config file contains all data you will need to use in your tests
@@ -41,10 +44,6 @@ This class is used to read our config file "Config.properties"
 Locators Package
 
 This package is considered a repository of static locators that we have in the system to be used to create any method needed for building our test case the locators are divided into separate classes based on their page location
-
-Strings Package
-
-This package is considered a repository of static strings that we have in the system to be used to create any method needed for building our test case the locators are divided into separate classes based on their page location
 
 Pages Package
 
