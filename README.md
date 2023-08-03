@@ -14,7 +14,7 @@ All the test cases are added to the TestNG XML file called "AllTestCases.xml"
 
 all test cases have the necessary validations and assertions to make sure that the correct actions have been reflected
 
-**#Framework classes and their functionality**
+# Framework classes and their functionality
 
 ElementActions Class
 
@@ -36,7 +36,7 @@ ReadConfigPropertiesFile
 
 This class is used to read our config file "Config.properties"
 
-#Test Classes and their functionality
+# Test Classes and their functionality
 
 Locators Package
 
