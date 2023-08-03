@@ -89,6 +89,7 @@ public class HomePage {
 
     public boolean checkIfCategoryHasItems(String category) {
         ElementActions.checkThePresenceOfElement(HomePageLocators.PRODUCTS_LIST);
+        System.out.println("the number of "+category+" Items is: "+ElementActions.retrieveElements(HomePageLocators.PRODUCTS_LIST).size());
         return ElementActions.retrieveElements(HomePageLocators.PRODUCTS_LIST).size() > 0;
     }
 
@@ -113,6 +114,6 @@ public class HomePage {
     }
 
     public void clickOnLogoutButton(){
-        ElementActions.clickOnElement(HomePageLocators.LOGOUT_BTN);
+        ElementActions.forceClick(HomePageLocators.LOGOUT_BTN);
     }
 }

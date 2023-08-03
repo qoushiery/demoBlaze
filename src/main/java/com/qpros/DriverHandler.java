@@ -20,7 +20,9 @@ public class DriverHandler {
                 driver = new ThreadLocal<WebDriver>(){
                     @Override protected  WebDriver initialValue()
                     { return new ChromeDriver(); }
-                };
+                }
+
+                ;
                 break;
             case FIREFOX:
                 WebDriverManager.firefoxdriver().setup();

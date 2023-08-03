@@ -46,6 +46,7 @@ public void enterName(String fullName){
         return ElementActions.getTextOfWebElement(SuccessfulPurchaseLocators.THANKS_MESSAGE).equalsIgnoreCase(StaticStrings.THANKS_PURCHASE_MESSAGE);
     }
     public void clickOnSuccessfulOkButton(){
+        ElementActions.checkIfWebElementIsClickable(SuccessfulPurchaseLocators.OK_BTN);
         ElementActions.clickOnElement(SuccessfulPurchaseLocators.OK_BTN);
     }
 }

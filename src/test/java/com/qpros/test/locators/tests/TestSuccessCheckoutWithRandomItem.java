@@ -11,7 +11,7 @@ import org.testng.asserts.SoftAssert;
 import java.util.Random;
 @Test
 public class TestSuccessCheckoutWithRandomItem extends BaseTest{
-    public void executingSuccessCheckoutWithRandomItem(){
+    public void executingSuccessCheckoutWithRandomItem() throws InterruptedException {
         HomePage homePage = new HomePage();
         ProductDetailsPage productDetailsPage = new ProductDetailsPage();
         CartDetailsPage cartDetailsPage = new CartDetailsPage();
@@ -48,11 +48,11 @@ public class TestSuccessCheckoutWithRandomItem extends BaseTest{
         cartDetailsPage.clickOnPurchaseButton();
 
         softAssert.assertTrue(cartDetailsPage.checkPurchaseIsSucceeded(),"Purchase is failed");
-
+        Thread.sleep(1000);
         cartDetailsPage.clickOnSuccessfulOkButton();
 
         softAssert.assertEquals(homePage.getPageTitle(), StaticStrings.PRODUCT_STORE_TITLE,"User is not redirected to the home screen");
-
+        homePage.clickOnArrowLeft();
         homePage.clickOnLogoutButton();
 
         softAssert.assertAll();

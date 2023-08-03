@@ -6,6 +6,8 @@ import com.qpros.actions.BrowserActions;
 import org.testng.annotations.*;
 import com.qpros.utilities.ReadConfigPropertiesFile;
 
+import java.util.concurrent.TimeUnit;
+
 public class BaseTest {
 
     @BeforeSuite
